@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import profileDrone from "@/assets/profile-drone.jpg";
 import {
   ArrowUpRight,
   BadgeCheck,
@@ -176,7 +177,7 @@ function Hero({ reduceMotion }: { reduceMotion: boolean }) {
   return (
     <section id="top" className="relative min-h-[calc(100svh+48px)] overflow-hidden">
       <Image
-        src="/profile-drone.jpg"
+        src={profileDrone}
         alt="Ninad Deshmukh on a rooftop with drones in flight"
         fill
         priority

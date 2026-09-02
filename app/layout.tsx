@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import profileDrone from "@/assets/profile-drone.jpg";
+import { siteOrigin, siteUrl } from "@/lib/site";
 import "./globals.css";
 
-const siteUrl = "https://ninad-deshmukh.dev";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(siteOrigin),
   title: {
     default: "Ninad Deshmukh | Robotics & UAV Systems Engineer",
     template: "%s | Ninad Deshmukh",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     siteName: "Ninad Deshmukh Portfolio",
     images: [
       {
-        url: "/profile-drone.jpg",
-        width: 1200,
-        height: 1600,
+        url: profileDrone.src,
+        width: profileDrone.width,
+        height: profileDrone.height,
         alt: "Ninad Deshmukh with autonomous drones",
       },
     ],
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Ninad Deshmukh | Robotics & UAV Systems Engineer",
     description:
       "Autonomous UAV systems, embedded robotics, AI/ML, computer vision, and field-tested engineering.",
-    images: ["/profile-drone.jpg"],
+    images: [profileDrone.src],
   },
   robots: {
     index: true,

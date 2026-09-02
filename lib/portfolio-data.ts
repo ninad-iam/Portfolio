@@ -19,6 +19,7 @@ import {
   Wrench,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { withBasePath } from "@/lib/site";
 
 export type TimelineItem = {
   title: string;
@@ -55,7 +56,7 @@ export const profile = {
   phone: "+1 227 205 7171",
   linkedin: "https://www.linkedin.com/in/ninad26",
   github: "https://github.com/ninad-iam",
-  resume: "/Ninad-Deshmukh-Resume.pdf",
+  resume: withBasePath("/Ninad-Deshmukh-Resume.pdf"),
   summary:
     "Robotics graduate student and UAV systems engineer focused on UAV autonomy, robot perception, embedded systems, computer vision, system validation, and field-tested product reliability. I build hardware-software systems that can leave the lab, survive field testing, and improve real-world autonomous operations.",
   value:

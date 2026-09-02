@@ -1,5 +1,6 @@
 import Portfolio from "@/components/Portfolio";
 import { profile } from "@/lib/portfolio-data";
+import { siteUrl } from "@/lib/site";
 
 export default function Home() {
   const jsonLd = {
@@ -9,7 +10,7 @@ export default function Home() {
     jobTitle: "Robotics MS Candidate and UAV Systems Engineer",
     email: profile.email,
     telephone: profile.phone,
-    url: "https://ninad-deshmukh.dev",
+    url: siteUrl,
     sameAs: [profile.linkedin, profile.github],
     alumniOf: [
       {
